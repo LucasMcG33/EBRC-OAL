@@ -1,0 +1,103 @@
+/* Adds default fonts */
+@font-face {
+  font-family: 'Roboto Condensed'; /* set name */
+  src: url(RobotoCondensed-VariableFont_wght.ttf); /* url of the font */
+}
+
+@font-face {
+  font-family: 'Roboto Condensed'; /* set name */
+  src: url(RobotoCondensed-Italic-VariableFont_wght.ttf); /* url of the font */
+  font-style: italic;
+}
+
+.ebrc-navbar {
+  background-color: #ffffff;
+  --bs-navbar-color: #000000;         /* Default link color */
+  --bs-navbar-hover-color: #72c04f;   /* Hover & focus link color */
+  --bs-navbar-active-color: #72c04f;  /* Active link color */
+}
+
+.navbar .dropdown-menu {
+  --bs-dropdown-link-hover-bg: #80c723;    /* New hover background color */
+  --bs-dropdown-link-hover-color: #ffffff; /* New hover text color */
+  --bs-nav-link-font-size: 1.25rem;
+  --bs-nav-link-padding-x: 1rem;
+  --bs-nav-link-padding-y: 0rem;
+  
+}
+
+
+/* Smooth transition for the Bootstrap caret */
+.navbar .dropdown-toggle::after {
+  transition: transform 0.25s ease-in-out;
+  vertical-align: middle; /* Keeps alignment centered during rotation */
+}
+
+/* Rotate caret when opened via click (mobile or desktop) */
+.navbar .dropdown-toggle.show::after {
+  transform: rotate(180deg);
+}
+
+/* Desktop hover behavior (lg breakpoint and up) */
+@media (min-width: 992px) {
+  /* Show dropdown menu on hover */
+  .navbar .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Prevents a gap that could break hover state */
+  }
+
+  /* Rotate caret on hover */
+  .navbar .nav-item.dropdown:hover .dropdown-toggle::after {
+    transform: rotate(180deg);
+  }
+}
+
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
+}
+
+
+.ebrc-button {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: #72c04f;
+  --bs-btn-border-color: #72c04f;
+  
+  /* Hover state */
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #6aaa00;
+  --bs-btn-hover-border-color: #6aaa00;
+  
+  /* Active / Pressed state */
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #6aaa00;
+  --bs-btn-active-border-color: #6aaa00;
+  
+  /* Focus ring (RGB values without 'rgb()') */
+  --bs-btn-focus-shadow-rgb: 109, 40, 217;
+
+  position: fixed;
+  right: 0;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* FONTS */
+/* ///////////////////////////////////////////////////////////////////// */
+
+.roboto{
+   font-family: 'Roboto Condensed'; 
+}
+
+h1{
+    font-family: 'Roboto Condensed';
+}
+
+h3{
+    font-family: 'Roboto Condensed';
+}
+
+p{
+    font-family: 'Roboto Condensed';
+}
