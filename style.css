@@ -78,8 +78,8 @@
   /* Focus ring (RGB values without 'rgb()') */
   --bs-btn-focus-shadow-rgb: 109, 40, 217;
 
-  position: fixed;
-  right: 0;
+  /* position: fixed;
+  right: 0; */
 }
 
 /* ///////////////////////////////////////////////////////////////////// */
