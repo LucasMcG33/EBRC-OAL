@@ -54,6 +54,7 @@
 
 
 
+
 .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0; /* remove the gap so it doesn't close */
@@ -78,8 +79,6 @@
   /* Focus ring (RGB values without 'rgb()') */
   --bs-btn-focus-shadow-rgb: 109, 40, 217;
 
-  /* position: fixed;
-  right: 0; */
 }
 
 /* ///////////////////////////////////////////////////////////////////// */
@@ -100,4 +99,30 @@ h3{
 
 p{
     font-family: 'Roboto Condensed';
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    /* max-width: 100%; */
+}
+
+.imageTextContainer { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+.headerImgText { 
+   position: absolute; 
+   width: 100%; 
+   text-align: center;
+   vertical-align: middle;
 }
