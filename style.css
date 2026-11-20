@@ -97,7 +97,20 @@ h3{
     font-family: 'Roboto Condensed';
 }
 
+h5{
+    font-family: 'Roboto Condensed';
+}
+
 p{
+    font-family: 'Roboto Condensed';
+}
+
+a{
+  color:#72c04f; 
+  text-decoration: none;
+}
+
+li{
     font-family: 'Roboto Condensed';
 }
 
